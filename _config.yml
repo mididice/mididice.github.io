@@ -1,35 +1,26 @@
-# Permalinks
-permalink:           pretty
+# Site settings
+name: midiDice
+email: mididice@gmail.com
+author: midiDice
+url: http://localhost:4000/
+resume_site: 
+github: https://github.com/mididcie/
+baseurl: ""
+description: ""
+meta_description: 
+motto: midiDice
+banner: 
 
-# Setup
-title:               Progress
-tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
-url:                 http://mididice.github.io
-#baseurl:             /progress-for-jekyll
-analytics_id:
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
 
-# Owner/author information
-owner:
-  name:           midiDice
-  avatar:         avatar.png
-  bio:            "Designer."
-  email:          mididice@gmail.com
-  twitter:        alexanderussell
-  github:         mididice
-  instagram:      alexanderussell
-  dribbble:       alexanderussell
-  location:       "Lincoln, NE"
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
+github_username: mididice
 
-# Custom vars
-version:             2.0.0
-github:
-  repo:              
+# Build settings
+markdown: kramdown
 
-# Pagination
-paginate: 5
-paginate_path: "blog/page:num"
+baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
 
-# Gems
-gems:
-  - jekyll-paginate
