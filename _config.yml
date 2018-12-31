@@ -21,3 +21,10 @@ github_username: mididice
 
 # Build settings
 markdown: kramdown
+
+# Custom settings
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      image: true
