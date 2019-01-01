@@ -1,14 +1,14 @@
 # Site settings
-name: midiDice
+name: midiDICE blog
 email: mididice@gmail.com
-author: midiDice
-url: http://localhost:4000/
+author: midiDICE
+url: http://mididice.github.io/
 resume_site: 
-github: https://github.com/mididcie/
-baseurl: ""
+github: https://github.com/mididice/
+baseurl: 
 description: ""
-meta_description: 
-motto: midiDice
+meta_description: midiDICE team blog 
+motto: midiDICE
 banner: 
 
 #permalink: /:categories/:year/:month/:day/:title/
@@ -22,5 +22,9 @@ github_username: mididice
 # Build settings
 markdown: kramdown
 
-baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
-
+# Custom settings
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      image: true
