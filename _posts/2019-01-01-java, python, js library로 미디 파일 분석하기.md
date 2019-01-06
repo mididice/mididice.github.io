@@ -93,9 +93,9 @@ one-twenty-eighth(128분음): o
 
 ### bpm에 따른 음의 길이 시간 환산 공식
 
-- 온음(whole) 시간 = 초(second) / bpm * 4
-- 2분음(half) 시간 = 초(second) / bpm * 4 / 2
-- 4분음(quarter) 시간 = 초(second) / bpm * 4 / 4
+- 온음(whole) 시간 = 60초(second) / bpm * 4
+- 2분음(half) 시간 = 60초(second) / bpm * 4 / 2
+- 4분음(quarter) 시간 = 60초(second) / bpm * 4 / 4
 
 
 # tone.js MidiConvert
