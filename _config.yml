@@ -13,9 +13,7 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <p>team midiDICE 기술 블로그</p>
-
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+     <p>midiDICE 기술 블로그</p>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a><p>©2019, midiDICE</p>
