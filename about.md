@@ -7,12 +7,6 @@ feature-img: "assets/img/about.jpg"
 
 midiDICE(미디다이스)는 2017년 여름 '뭐라도 재미있는 것을 만들어 보자'라는 모토 아래 결성된 IT 베이스의 미디어 프로젝트 팀이다. 인터랙션 디자이너 박주연·현지윤 및 개발자 김창민·민현기의 4인으로 구성되었으며, 주로 게임, 인공지능, 웹 등의 매체에서 생성음악과 비주얼을 통해 창작자-감상자 간의 벽을 허무는 작업을 진행해왔다.
 
-mididice@gmail.com
-
-https://www.facebook.com/mididice/
-
-https://www.instagram.com/mididice
-
 ## 약력
 - 2019.06 <A.I.632> 전시 및 워크숍, 토탈미술관
 - 2019.03 SXSW 2019 COREA IMPACT SHOWCASE 공연, 한국콘텐츠진흥원
