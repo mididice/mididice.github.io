@@ -1,7 +1,9 @@
-import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 import { AppConfig } from '@/utils/AppConfig';
+
+import LanguageSwitchLink from '../../components/LanguageSwitchLink';
+import Link from '../../components/Link';
 
 type IMainProps = {
   meta: ReactNode;
@@ -22,8 +24,8 @@ const Main = (props: IMainProps) => (
             {AppConfig.title}
           </Link>
         </h1>
-        <nav className="lg:flex flex-grow items-center">
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+        <nav className="grow items-center lg:flex">
+          <ul className="flex list-none flex-col lg:ml-auto lg:flex-row">
             <li className="ml-20 mr-6">
               <Link
                 href="/about/"
@@ -33,20 +35,27 @@ const Main = (props: IMainProps) => (
               </Link>
             </li>
             <li className="mr-6">
-              <a
+              <Link
                 className="border-none text-gray-700 hover:text-gray-900"
                 href="/project/"
               >
                 Project
-              </a>
+              </Link>
             </li>
             <li className="mr-6">
-              <Link
-                href="/language/"
+              <LanguageSwitchLink
+                locale="ko"
                 className="border-none text-gray-700 hover:text-gray-900"
               >
-                KO|EN
-              </Link>
+                KO
+              </LanguageSwitchLink>
+              |
+              <LanguageSwitchLink
+                locale="en"
+                className="border-none text-gray-700 hover:text-gray-900"
+              >
+                EN
+              </LanguageSwitchLink>
             </li>
           </ul>
         </nav>
