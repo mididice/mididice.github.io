@@ -12,6 +12,10 @@ a:hover {
 
 @tailwind utilities;
 
+body {
+  font-family: Pretendard-Regular;
+}
+
 .content p {
   @apply my-6;
 }
