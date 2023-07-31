@@ -33,6 +33,10 @@ body {
   transition: opacity 200ms ease-in;
 }
 
+.conferrer {
+  font-size: 32px;
+}
+
 .history-active {
   opacity: 1;
 }

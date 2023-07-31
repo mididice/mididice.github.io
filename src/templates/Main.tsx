@@ -32,7 +32,7 @@ const Main = (props: IMainProps) => {
   };
   return (
     <div
-      className={`${myFont.className} w-full bg-black px-1 text-gray-100`}
+      className={`${myFont.className} h-full w-full bg-black px-1 text-gray-100`}
       onWheel={handleScroll}
     >
       {props.meta}
