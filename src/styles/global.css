@@ -12,10 +12,31 @@ a:hover {
 
 @tailwind utilities;
 
+body {
+  font-family: Pretendard-Regular;
+}
+
 .content p {
   @apply my-6;
 }
 
 .content ul {
   @apply my-6;
+}
+
+.history {
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 600;
+  letter-spacing: -0.009em;
+  opacity: .45;
+  transition: opacity 200ms ease-in;
+}
+
+.conferrer {
+  font-size: 32px;
+}
+
+.history-active {
+  opacity: 1;
 }
