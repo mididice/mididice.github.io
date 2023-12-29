@@ -1,11 +1,63 @@
+import { motion, useScroll } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
+import { useEffect, useRef } from 'react';
+import styled from 'styled-components';
 
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
 import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic';
 
+const throttle = (callback, delay) => {
+  let last;
+  let timer;
+  return function () {
+    const context = this;
+    const now = +new Date();
+    const args = arguments;
+    if (last && now < last + delay) {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        last = now;
+        callback.apply(context, args);
+      }, delay);
+    } else {
+      last = now;
+      callback.apply(context, args);
+    }
+  };
+};
+
+const VideoS = styled(motion.video)`
+  width: 100%;
+  position: fixed;
+  left: 0;
+`;
+
+const IntroVideo = () => {
+  const url = '/assets/video/tmp.mp4';
+  const { scrollYProgress, scrollY } = useScroll();
+  const ref = useRef();
+
+  const updateAtScroll = () => {
+    const video = ref.current;
+    video.pause();
+    const p = scrollYProgress.get();
+    const currentFrame = Math.round(p * video.duration * 1000) / 1000;
+    // if (isFinite(currentFrame)) {
+    video.currentTime = currentFrame;
+    // }
+  };
+
+  useEffect(() => scrollY.onChange(throttle(updateAtScroll, 80)), []);
+
+  return (
+    <VideoS ref={ref}>
+      <source src={url} type="video/webm" />
+    </VideoS>
+  );
+};
 const History = () => {
   return (
     <div>
@@ -48,6 +100,7 @@ const History = () => {
     </div>
   );
 };
+
 const Introduction = () => {
   return (
     <div className="mx-auto max-w-screen-md">
@@ -81,6 +134,7 @@ const Index = () => {
       <div className="h-[1000px] bg-neutral-300 opacity-20">
         <h3 className="text-7xl font-semibold">{t('wmsf')}</h3>
       </div>
+      <IntroVideo />
       <Introduction />
       <div className="h-[800px] bg-neutral-300 opacity-20">
         <img
