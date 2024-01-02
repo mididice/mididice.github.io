@@ -131,9 +131,6 @@ const Index = () => {
         <Meta title="midiDICE" description="midiDICE is media art work team" />
       }
     >
-      <div className="h-[1000px] bg-neutral-300 opacity-20">
-        <h3 className="text-7xl font-semibold">{t('wmsf')}</h3>
-      </div>
       <IntroVideo />
       <Introduction />
       <div className="h-[800px] bg-neutral-300 opacity-20">
