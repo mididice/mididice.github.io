@@ -49,6 +49,15 @@ import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic';
 //     </VideoS>
 //   );
 // };
+const FirstScene = () => {
+  const { t } = useTranslation(['common']);
+  return (
+    <div className="mx-auto flex h-[1000px] max-w-6xl items-center justify-center text-center text-white opacity-100">
+      <h2 className="head-title">{t('wmsf')}</h2>
+    </div>
+  );
+};
+
 const History = () => {
   return (
     <div className="mx-auto flex h-[1970px] max-w-6xl items-center justify-center">
@@ -198,6 +207,122 @@ const Introduction = () => {
     </div>
   );
 };
+
+const RollingDice = () => {
+  const router = useRouter();
+  return (
+    <div className="rolling-dice flex h-[800px] items-center justify-center">
+      <div className="scene mx-auto">
+        <div className="cube">
+          <img
+            className="face face1"
+            src={`${router.basePath}/assets/images/PinkDice01.png`}
+            alt="이미지"
+          />
+          <img
+            className="face face2"
+            src={`${router.basePath}/assets/images/PinkDice02.png`}
+            alt="이미지"
+          />
+          <img
+            className="face face3"
+            src={`${router.basePath}/assets/images/PinkDice03.png`}
+            alt="이미지"
+          />
+          <img
+            className="face face4"
+            src={`${router.basePath}/assets/images/PinkDice04.png`}
+            alt="이미지"
+          />
+          <img
+            className="face face5"
+            src={`${router.basePath}/assets/images/PinkDice05.png`}
+            alt="이미지"
+          />
+          <img
+            className="face face6"
+            src={`${router.basePath}/assets/images/PinkDice06.png`}
+            alt="이미지"
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const WorkArchive = () => {
+  const router = useRouter();
+  return (
+    <div className="flex flex-col">
+      <div className="my-40 h-[800px] flex-1">
+        <div className="mx-auto max-w-6xl text-center text-white opacity-100">
+          <img
+            src={`${router.basePath}/assets/images/mididice2023.jpg`}
+            alt="이미지"
+          />
+        </div>
+        <div className="flex h-[300px] items-center justify-center bg-black">
+          <div className="text-2xl font-bold">
+            랜덤 음악과 패턴을 연결해서 만들어보는 나만의 음악
+          </div>
+        </div>
+      </div>
+      <div className="my-40 h-[800px] flex-1">
+        <div className="mx-auto max-w-6xl text-center text-white opacity-100">
+          <img
+            src={`${router.basePath}/assets/images/mididice2020.jpg`}
+            alt="이미지"
+          />
+        </div>
+        <div className="flex h-[300px] items-center justify-center bg-black">
+          <div className="text-2xl font-bold">
+            A storybook generator made of incomplete sentences that lets you complete stories by drawing your own pictures
+          </div>
+        </div>
+      </div>
+      <div className="my-40 h-[800px] flex-1">
+        <div className="mx-auto max-w-6xl text-center text-white opacity-100">
+          <img
+            src={`${router.basePath}/assets/images/mididice2019.avif`}
+            alt="이미지"
+          />
+        </div>
+        <div className="flex h-[300px] items-center justify-center bg-black">
+          <div className="text-2xl font-bold">
+            Workshop project about how people think about AI generated artworks. Sound design aided by Magenta Studio&apos;s interpolate plugin.
+          </div>
+        </div>
+      </div>
+      <div className="my-40 h-[800px] flex-1">
+        <div className="mx-auto max-w-6xl text-center text-white opacity-100">
+          <img
+            src={`${router.basePath}/assets/images/mididice2018.jpg`}
+            alt="이미지"
+          />
+        </div>
+        <div className="flex h-[300px] items-center justify-center bg-black">
+          <div className="text-2xl font-bold">
+            An arcade puzzle game that composes music every turn by interacting with artificial intelligence. We used magenta(open source) to generate AI music in real-time.
+          </div>
+        </div>
+      </div>
+      <div className="my-40 h-[800px] flex-1">
+        <div className="mx-auto max-w-6xl text-center text-white opacity-100">
+          <img
+            src={`${router.basePath}/assets/images/mididice2017.jpg`}
+            alt="이미지"
+          />
+        </div>
+        <div className="flex h-[300px] items-center justify-center bg-black">
+          <div className="text-2xl font-bold">
+            Website that makes music by connecting random music and patterns
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const People = () => {
   return (
     <div className="mx-auto flex h-[1120px] max-w-6xl items-center justify-center">
@@ -287,133 +412,30 @@ const People = () => {
     </div>
   );
 };
-const Index = () => {
-  const router = useRouter();
-  const { t } = useTranslation(['common']);
 
+const LastScene = () => {
+  const { t } = useTranslation(['common']);
+  return (
+    <div className="mx-auto flex h-[1080px] max-w-6xl items-center justify-center text-center text-white opacity-100">
+      <h2 className="last-title">{t('last')}</h2>
+    </div>
+  );
+};
+
+const Index = () => {
   return (
     <Main
       meta={
         <Meta title="midiDICE" description="midiDICE is media art work team" />
       }
     >
-      <div className="mx-auto flex h-[1000px] max-w-6xl items-center justify-center text-center text-white opacity-100">
-        <h2 className="head-title">{t('wmsf')}</h2>
-      </div>
+      <FirstScene />
       <Introduction />
-      <div className="rolling-dice flex h-[800px] items-center justify-center">
-        <div className="scene mx-auto">
-          <div className="cube">
-            <img
-              className="face face1"
-              src={`${router.basePath}/assets/images/PinkDice01.png`}
-              alt="이미지"
-            />
-            <img
-              className="face face2"
-              src={`${router.basePath}/assets/images/PinkDice02.png`}
-              alt="이미지"
-            />
-            <img
-              className="face face3"
-              src={`${router.basePath}/assets/images/PinkDice03.png`}
-              alt="이미지"
-            />
-            <img
-              className="face face4"
-              src={`${router.basePath}/assets/images/PinkDice04.png`}
-              alt="이미지"
-            />
-            <img
-              className="face face5"
-              src={`${router.basePath}/assets/images/PinkDice05.png`}
-              alt="이미지"
-            />
-            <img
-              className="face face6"
-              src={`${router.basePath}/assets/images/PinkDice06.png`}
-              alt="이미지"
-            />
-          </div>
-        </div>
-      </div>
+      <RollingDice />
       <History />
-      <div className="flex flex-col">
-        <div className="my-40 h-[800px] flex-1">
-          <div className="mx-auto max-w-6xl text-center text-white opacity-100">
-            <img
-              src={`${router.basePath}/assets/images/mididice2023.jpg`}
-              alt="이미지"
-            />
-          </div>
-          <div className="flex h-[300px] items-center justify-center bg-black">
-            <div className="text-2xl font-bold">
-              랜덤 음악과 패턴을 연결해서 만들어보는 나만의 음악
-            </div>
-          </div>
-        </div>
-        <div className="my-40 h-[800px] flex-1">
-          <div className="mx-auto max-w-6xl text-center text-white opacity-100">
-            <img
-              src={`${router.basePath}/assets/images/mididice2020.jpg`}
-              alt="이미지"
-            />
-          </div>
-          <div className="flex h-[300px] items-center justify-center bg-black">
-            <div className="text-2xl font-bold">
-              A storybook generator made of incomplete sentences that lets you
-              complete stories by drawing your own pictures
-            </div>
-          </div>
-        </div>
-        <div className="my-40 h-[800px] flex-1">
-          <div className="mx-auto max-w-6xl text-center text-white opacity-100">
-            <img
-              src={`${router.basePath}/assets/images/mididice2019.avif`}
-              alt="이미지"
-            />
-          </div>
-          <div className="flex h-[300px] items-center justify-center bg-black">
-            <div className="text-2xl font-bold">
-              Workshop project about how people think about AI generated
-              artworks. Sound design aided by Magenta Studio's interpolate
-              plugin.
-            </div>
-          </div>
-        </div>
-        <div className="my-40 h-[800px] flex-1">
-          <div className="mx-auto max-w-6xl text-center text-white opacity-100">
-            <img
-              src={`${router.basePath}/assets/images/mididice2018.jpg`}
-              alt="이미지"
-            />
-          </div>
-          <div className="flex h-[300px] items-center justify-center bg-black">
-            <div className="text-2xl font-bold">
-              An arcade puzzle game that composes music every turn by
-              interacting with artificial intelligence. We used magenta(open
-              source) to generate AI music in real-time.
-            </div>
-          </div>
-        </div>
-        <div className="my-40 h-[800px] flex-1">
-          <div className="mx-auto max-w-6xl text-center text-white opacity-100">
-            <img
-              src={`${router.basePath}/assets/images/mididice2017.jpg`}
-              alt="이미지"
-            />
-          </div>
-          <div className="flex h-[300px] items-center justify-center bg-black">
-            <div className="text-2xl font-bold">
-              Website that makes music by connecting random music and patterns
-            </div>
-          </div>
-        </div>
-      </div>
+      <WorkArchive />
       <People />
-      <div className="mx-auto flex h-[1080px] max-w-6xl items-center justify-center text-center text-white opacity-100">
-        <h2 className="last-title">{t('last')}</h2>
-      </div>
+      <LastScene />
     </Main>
   );
 };

@@ -36,9 +36,9 @@ const Main = (props: IMainProps) => {
       onWheel={handleScroll}
     >
       {props.meta}
-      <header className="px-22 z-2 relative mx-auto h-14 max-w-4xl">
+      <header className="px-24 relative mx-auto h-14 max-w-4xl">
         <nav className="flex h-full flex-wrap items-center justify-between">
-          <div className="grow-1 flex h-full shrink-0 items-center">
+          <div className="flex h-full shrink-0 items-center">
             <span className="text-4xl font-semibold text-white">
               <Link href="/">{AppConfig.title}</Link>
             </span>
