@@ -32,15 +32,17 @@ const Main = (props: IMainProps) => {
   };
   return (
     <div
-      className={`${myFont.className} h-full w-full bg-black px-1 text-gray-100`}
+      className={`${myFont.className} h-full w-full px-1 text-gray-100`}
       onWheel={handleScroll}
     >
       {props.meta}
-      <header className="px-24 relative mx-auto h-14 max-w-4xl">
+      <header className="px-22 z-2 relative mx-auto h-14 max-w-6xl">
         <nav className="flex h-full flex-wrap items-center justify-between">
-          <div className="flex h-full shrink-0 items-center">
+          <div className="grow-1 flex h-full shrink-0 items-center">
             <span className="text-4xl font-semibold text-white">
-              <Link href="/">{AppConfig.title}</Link>
+              <Link className="link" href="/">
+                {AppConfig.title}
+              </Link>
             </span>
           </div>
           <div
@@ -66,20 +68,6 @@ const Main = (props: IMainProps) => {
             className={`${navbar ? '' : 'hidden'}
               block w-full lg:flex lg:w-auto lg:items-center`}
           >
-            <div className="text-sm lg:grow">
-              <Link
-                href="/about/"
-                className="mr-4 mt-4 block text-teal-200 hover:text-white lg:mt-0 lg:inline-block"
-              >
-                About
-              </Link>
-              <Link
-                href="/project/"
-                className="mr-4 mt-4 block text-teal-200 hover:text-white lg:mt-0 lg:inline-block"
-              >
-                Proejct
-              </Link>
-            </div>
             <div className="mt-4 block text-teal-200 lg:mt-0 lg:inline-block">
               <LanguageSwitchLink
                 locale="ko"
@@ -101,10 +89,30 @@ const Main = (props: IMainProps) => {
         </nav>
       </header>
       <div className="mx-auto">
-        <main className="content py-5 text-xl">{props.children}</main>
+        <main className="content text-xl">{props.children}</main>
 
-        <footer className="border-t border-gray-300 py-8 text-center text-sm">
-          © Copyright {new Date().getFullYear()} {AppConfig.title}
+        <footer className="h-[350px] max-w-6xl">
+          <div className="flex flex-col items-start justify-start">
+            <span className="footer-team">
+              <button
+                type="button"
+                className="link"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
+                midiDICE
+              </button>
+            </span>
+            <span className="footer-contact">
+              Feel free to contact us via email at&nbsp;
+              <a className="footer-email link" href="mailto:mididice@gmail.com">
+                mididice@gmail.com
+              </a>
+            </span>
+            <span className="footer-copyright">
+              Copyright © {new Date().getFullYear()} {AppConfig.title}.&nbsp;
+              all rights reserved.
+            </span>
+          </div>
         </footer>
       </div>
     </div>

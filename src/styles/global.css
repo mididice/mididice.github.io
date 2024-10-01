@@ -1,9 +1,5 @@
 @tailwind base;
 
-a {
-  @apply text-blue-700;
-}
-
 a:hover {
   @apply border-b-2 border-blue-700;
 }
@@ -14,29 +10,146 @@ a:hover {
 
 body {
   font-family: Pretendard-Regular;
+  background-color: #121212;
 }
 
 .content p {
   @apply my-6;
 }
 
-.content ul {
-  @apply my-6;
+.rolling-dice {
+  background-color: #904BF1;
+  opacity: 20%;
 }
 
 .history {
-  font-size: 64px;
-  line-height: 1.0625;
+  font-size: 56px;
+  line-height: 78.4px;
   font-weight: 600;
   letter-spacing: -0.009em;
   opacity: .45;
   transition: opacity 200ms ease-in;
 }
+.head-title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 100.8px;
+  width: 600px;
+}
+
+.footstep-title{
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 78.4px;
+}
+.footsteps {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33.6px;
+}
+.footstep-type {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44.8px;
+}
+.exhibition {
+  color: #606060;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.4px;
+}
 
 .conferrer {
-  font-size: 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .history-active {
   opacity: 1;
+}
+
+.footer-team {
+  font-weight: 900;
+  font-size: 40px;
+  color: #606060;
+  margin-bottom: 40px;
+}
+
+.footer-contact {
+  color:#fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.footer-email {
+  text-decoration: underline;
+}
+
+.link:hover {
+  border: none;
+}
+
+.footer-copyright {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.8px;
+  color: #b5b5b5;
+}
+
+.last-title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 100.8px;
+}
+
+.scene {
+  width: 200px;
+  height: 200px;
+  perspective: 400px; /* 3D 효과를 위한 관점 */
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg); /* 초기 각도 */
+  animation: roll 10s infinite; /* 무한 굴림 애니메이션 */
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.face1 { transform: rotateY(0deg) translateZ(100px); }
+.face2 { transform: rotateY(90deg) translateZ(100px); }
+.face3 { transform: rotateY(180deg) translateZ(100px); }
+.face4 { transform: rotateY(-90deg) translateZ(100px); }
+.face5 { transform: rotateX(90deg) translateZ(100px); }
+.face6 { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes roll {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(90deg) rotateY(90deg);
+  }
+  50% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    transform: rotateX(270deg) rotateY(270deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
 }

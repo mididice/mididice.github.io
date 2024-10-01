@@ -247,8 +247,8 @@ const RollingDice = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const WorkArchive = () => {
   const router = useRouter();
@@ -276,7 +276,8 @@ const WorkArchive = () => {
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
           <div className="text-2xl font-bold">
-            A storybook generator made of incomplete sentences that lets you complete stories by drawing your own pictures
+            A storybook generator made of incomplete sentences that lets you
+            complete stories by drawing your own pictures
           </div>
         </div>
       </div>
@@ -289,7 +290,8 @@ const WorkArchive = () => {
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
           <div className="text-2xl font-bold">
-            Workshop project about how people think about AI generated artworks. Sound design aided by Magenta Studio&apos;s interpolate plugin.
+            Workshop project about how people think about AI generated artworks.
+            Sound design aided by Magenta Studio&apos;s interpolate plugin.
           </div>
         </div>
       </div>
@@ -302,7 +304,9 @@ const WorkArchive = () => {
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
           <div className="text-2xl font-bold">
-            An arcade puzzle game that composes music every turn by interacting with artificial intelligence. We used magenta(open source) to generate AI music in real-time.
+            An arcade puzzle game that composes music every turn by interacting
+            with artificial intelligence. We used magenta(open source) to
+            generate AI music in real-time.
           </div>
         </div>
       </div>
