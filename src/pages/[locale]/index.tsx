@@ -349,7 +349,7 @@ const People = () => {
               Ableton Live, Max, p5.js를 이용해 미디어아트 관련 작업을
               진행해왔다.
             </span>
-            <div className="justify-left align-left grid grid-cols-3 text-xs text-zinc-400">
+            <div className="grid grid-cols-3 text-xs text-zinc-400">
               <span className="col-span-1"># UI/UX Design</span>
               <span className="col-span-2"># Sound Design</span>
               <span className="col-span-1"># Team Leader</span>
@@ -367,7 +367,7 @@ const People = () => {
               최근에는 음악 데이터의 그래픽 비주얼라이제이션에 대한 연구를
               기반으로 작업을 진행하고 있다.
             </span>
-            <div className="justify-left align-left grid grid-cols-3 text-xs text-zinc-400">
+            <div className="grid grid-cols-3 text-xs text-zinc-400">
               <span className="col-span-1"># Graphic Design</span>
               <span className="col-span-2"># Motion Graphic</span>
               <span className="col-span-1"># UX/UI Design</span>
@@ -385,7 +385,7 @@ const People = () => {
               작업 및 딥러닝을 사용한 음악 생성 작업을 진행했다. 최근에는 AI
               인터랙션에 관심을 두고 연구를 진행하고 있다.
             </span>
-            <div className="justify-left align-left grid grid-cols-3 text-xs text-zinc-400">
+            <div className="grid grid-cols-3 text-xs text-zinc-400">
               <span className="col-span-1"># Researcher</span>
               <span className="col-span-2"># BE/FE Engineer</span>
               <span className="col-span-1"># AI/ML</span>
@@ -404,7 +404,7 @@ const People = () => {
               맡아왔다. 미니멀리즘 음악에 관심이 많으며 최근에는 미디 파일
               구조분석을 연구하고 있다.
             </span>
-            <div className="justify-left align-left grid grid-cols-3 text-xs text-zinc-400">
+            <div className="grid grid-cols-3 text-xs text-zinc-400">
               <span className="col-span-1"># Researcher</span>
               <span className="col-span-2"># BE/FE Engineer</span>
               <span className="col-span-1"># AI/ML</span>
