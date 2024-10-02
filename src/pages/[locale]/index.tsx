@@ -1,8 +1,8 @@
-import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
+import Image from 'next/image'
 
 import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic';
 
@@ -209,40 +209,51 @@ const Introduction = () => {
 };
 
 const RollingDice = () => {
-  const router = useRouter();
   return (
     <div className="rolling-dice flex h-[800px] items-center justify-center">
       <div className="scene mx-auto">
         <div className="cube">
-          <img
+          <Image
             className="face face1"
-            src={`${router.basePath}/assets/images/PinkDice01.png`}
-            alt="이미지"
+            src={`http://d1q98opzn481en.cloudfront.net/PinkDice01.png`}
+            alt="pink dice 1"
+            width={425}
+            height={425}
           />
-          <img
+          <Image
             className="face face2"
-            src={`${router.basePath}/assets/images/PinkDice02.png`}
-            alt="이미지"
+            src={`http://d1q98opzn481en.cloudfront.net/PinkDice02.png`}
+            alt="pink dice 2"
+            width={425}
+            height={425}
           />
-          <img
+          <Image
             className="face face3"
-            src={`${router.basePath}/assets/images/PinkDice03.png`}
-            alt="이미지"
+            src={`http://d1q98opzn481en.cloudfront.net/PinkDice03.png`}
+            alt="pink dice 3"
+            width={425}
+            height={425}
           />
-          <img
+          <Image
             className="face face4"
-            src={`${router.basePath}/assets/images/PinkDice04.png`}
-            alt="이미지"
+            src={`http://d1q98opzn481en.cloudfront.net/PinkDice04.png`}
+            alt="pink dice 4"
+            width={425}
+            height={425}
           />
-          <img
+          <Image
             className="face face5"
-            src={`${router.basePath}/assets/images/PinkDice05.png`}
-            alt="이미지"
+            src={`http://d1q98opzn481en.cloudfront.net/PinkDice05.png`}
+            alt="pink dice 5"
+            width={425}
+            height={425}
           />
-          <img
+          <Image
             className="face face6"
-            src={`${router.basePath}/assets/images/PinkDice06.png`}
-            alt="이미지"
+            src={`http://d1q98opzn481en.cloudfront.net/PinkDice06.png`}
+            alt="pink dice 6"
+            width={425}
+            height={425}
           />
         </div>
       </div>
@@ -251,13 +262,12 @@ const RollingDice = () => {
 };
 
 const WorkArchive = () => {
-  const router = useRouter();
   return (
     <div className="flex flex-col">
       <div className="my-40 h-[800px] flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <img
-            src={`${router.basePath}/assets/images/mididice2023.jpg`}
+            src={`http://d1q98opzn481en.cloudfront.net/mididice2023.jpg`}
             alt="이미지"
           />
         </div>
@@ -270,7 +280,7 @@ const WorkArchive = () => {
       <div className="my-40 h-[800px] flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <img
-            src={`${router.basePath}/assets/images/mididice2020.jpg`}
+            src={`http://d1q98opzn481en.cloudfront.net/mididice2020.jpg`}
             alt="이미지"
           />
         </div>
@@ -284,7 +294,7 @@ const WorkArchive = () => {
       <div className="my-40 h-[800px] flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <img
-            src={`${router.basePath}/assets/images/mididice2019.avif`}
+            src={`http://d1q98opzn481en.cloudfront.net/mididice2019.avif`}
             alt="이미지"
           />
         </div>
@@ -298,7 +308,7 @@ const WorkArchive = () => {
       <div className="my-40 h-[800px] flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <img
-            src={`${router.basePath}/assets/images/mididice2018.jpg`}
+            src={`http://d1q98opzn481en.cloudfront.net/mididice2018.jpg`}
             alt="이미지"
           />
         </div>
@@ -313,7 +323,7 @@ const WorkArchive = () => {
       <div className="my-40 h-[800px] flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <img
-            src={`${router.basePath}/assets/images/mididice2017.jpg`}
+            src={`http://d1q98opzn481en.cloudfront.net/mididice2017.jpg`}
             alt="이미지"
           />
         </div>
