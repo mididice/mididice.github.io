@@ -15,6 +15,7 @@ module.exports = withBundleAnalyzer({
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'http',
@@ -24,4 +25,5 @@ module.exports = withBundleAnalyzer({
       },
     ],
   },
+  output: 'export',
 });

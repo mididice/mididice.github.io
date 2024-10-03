@@ -1,8 +1,8 @@
+import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
-import Image from 'next/image'
 
 import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic';
 
@@ -215,42 +215,42 @@ const RollingDice = () => {
         <div className="cube">
           <Image
             className="face face1"
-            src={`http://d1q98opzn481en.cloudfront.net/PinkDice01.png`}
+            src="http://d1q98opzn481en.cloudfront.net/PinkDice01.png"
             alt="pink dice 1"
             width={425}
             height={425}
           />
           <Image
             className="face face2"
-            src={`http://d1q98opzn481en.cloudfront.net/PinkDice02.png`}
+            src="http://d1q98opzn481en.cloudfront.net/PinkDice02.png"
             alt="pink dice 2"
             width={425}
             height={425}
           />
           <Image
             className="face face3"
-            src={`http://d1q98opzn481en.cloudfront.net/PinkDice03.png`}
+            src="http://d1q98opzn481en.cloudfront.net/PinkDice03.png"
             alt="pink dice 3"
             width={425}
             height={425}
           />
           <Image
             className="face face4"
-            src={`http://d1q98opzn481en.cloudfront.net/PinkDice04.png`}
+            src="http://d1q98opzn481en.cloudfront.net/PinkDice04.png"
             alt="pink dice 4"
             width={425}
             height={425}
           />
           <Image
             className="face face5"
-            src={`http://d1q98opzn481en.cloudfront.net/PinkDice05.png`}
+            src="http://d1q98opzn481en.cloudfront.net/PinkDice05.png"
             alt="pink dice 5"
             width={425}
             height={425}
           />
           <Image
             className="face face6"
-            src={`http://d1q98opzn481en.cloudfront.net/PinkDice06.png`}
+            src="http://d1q98opzn481en.cloudfront.net/PinkDice06.png"
             alt="pink dice 6"
             width={425}
             height={425}
@@ -266,9 +266,11 @@ const WorkArchive = () => {
     <div className="flex flex-col">
       <div className="my-40 h-[800px] flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
-          <img
-            src={`http://d1q98opzn481en.cloudfront.net/mididice2023.jpg`}
-            alt="이미지"
+          <Image
+            src="http://d1q98opzn481en.cloudfront.net/mididice2023.jpg"
+            alt=""
+            width={1024}
+            height={768}
           />
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
@@ -279,9 +281,11 @@ const WorkArchive = () => {
       </div>
       <div className="my-40 h-[800px] flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
-          <img
-            src={`http://d1q98opzn481en.cloudfront.net/mididice2020.jpg`}
-            alt="이미지"
+          <Image
+            src="http://d1q98opzn481en.cloudfront.net/mididice2020.jpg"
+            alt=""
+            width={4032}
+            height={2268}
           />
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
@@ -293,9 +297,11 @@ const WorkArchive = () => {
       </div>
       <div className="my-40 h-[800px] flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
-          <img
-            src={`http://d1q98opzn481en.cloudfront.net/mididice2019.avif`}
-            alt="이미지"
+          <Image
+            src="http://d1q98opzn481en.cloudfront.net/mididice2019.avif"
+            alt=""
+            width={2048}
+            height={996}
           />
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
@@ -307,9 +313,11 @@ const WorkArchive = () => {
       </div>
       <div className="my-40 h-[800px] flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
-          <img
-            src={`http://d1q98opzn481en.cloudfront.net/mididice2018.jpg`}
-            alt="이미지"
+          <Image
+            src="http://d1q98opzn481en.cloudfront.net/mididice2018.jpg"
+            alt=""
+            width={4032}
+            height={3024}
           />
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
@@ -322,9 +330,11 @@ const WorkArchive = () => {
       </div>
       <div className="my-40 h-[800px] flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
-          <img
-            src={`http://d1q98opzn481en.cloudfront.net/mididice2017.jpg`}
-            alt="이미지"
+          <Image
+            src="http://d1q98opzn481en.cloudfront.net/mididice2017.jpg"
+            alt=""
+            width={6000}
+            height={3700}
           />
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
