@@ -36,7 +36,7 @@ const Main = (props: IMainProps) => {
       onWheel={handleScroll}
     >
       {props.meta}
-      <header className="relative mx-auto h-14 max-w-6xl px-24">
+      <header className="relative mx-auto h-24 max-w-6xl px-24">
         <nav className="flex h-full flex-wrap items-center justify-between">
           <div className="flex h-full shrink-0 items-center">
             <span className="text-4xl font-semibold text-white">
@@ -72,18 +72,14 @@ const Main = (props: IMainProps) => {
               <LanguageSwitchLink
                 locale="ko"
                 className="block text-teal-200 lg:mt-0 lg:inline-block"
-              >
-                KO
-              </LanguageSwitchLink>
-              <span className="block text-teal-200 lg:mt-0 lg:inline-block">
+              />
+              <span className="block px-1 text-teal-200 lg:mt-0 lg:inline-block">
                 |
               </span>
               <LanguageSwitchLink
                 locale="en"
                 className="block text-teal-200 lg:mt-0 lg:inline-block"
-              >
-                EN
-              </LanguageSwitchLink>
+              />
             </div>
           </div>
         </nav>
@@ -106,6 +102,19 @@ const Main = (props: IMainProps) => {
               Feel free to contact us via email at&nbsp;
               <a className="footer-email link" href="mailto:mididice@gmail.com">
                 mididice@gmail.com
+              </a>
+            </span>
+            <span className="footer-contact">
+              Explore our work on GitHub&nbsp;
+              <a
+                className="link inline-flex align-middle"
+                href="https://github.com/mididice"
+              >
+                <img
+                  className="w-5"
+                  src="http://d1q98opzn481en.cloudfront.net/github-mark-white.svg"
+                  alt="github link"
+                />
               </a>
             </span>
             <span className="footer-copyright">

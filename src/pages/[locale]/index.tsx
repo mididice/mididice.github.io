@@ -53,12 +53,26 @@ const FirstScene = () => {
   const { t } = useTranslation(['common']);
   return (
     <div className="mx-auto flex h-[1000px] max-w-6xl items-center justify-center text-center text-white opacity-100">
-      <h2 className="head-title">{t('wmsf')}</h2>
+      <h2 className="head-title">{t('start')}</h2>
+    </div>
+  );
+};
+
+const Introduction = () => {
+  const { t } = useTranslation(['common']);
+  return (
+    <div className="mx-auto flex min-h-[1260px] max-w-6xl items-center justify-center text-white">
+      <div className="p-12">
+        <p className="history">{t('introduce1')}</p>
+        <p className="history">{t('introduce2')}</p>
+        <p className="history">{t('introduce3')}</p>
+      </div>
     </div>
   );
 };
 
 const History = () => {
+  const { t } = useTranslation(['common']);
   return (
     <div className="mx-auto flex h-[1970px] max-w-6xl items-center justify-center">
       <div>
@@ -69,140 +83,105 @@ const History = () => {
         </h2>
         <div className="mt-48 grid grid-cols-5">
           <div className="col-span-1">
-            <span className="footstep-type">전시</span>
+            <span className="footstep-type">{t('exhibition')}</span>
           </div>
           <ul className="col-span-4">
             <li className="footsteps flex flex-col">
               <span className="exhibition flex-1">2024.07</span>
               <div className="flex-1">
-                <span>디지털 플래닛 </span>
-                <span className="conferrer">국립부산과학관</span>
+                <span className="mr-1">{t('e-title-2024')}</span>
+                <span className="conferrer">{t('e-place-2024')}</span>
               </div>
             </li>
             <li className="footsteps flex flex-col">
               <span className="exhibition flex-1">2023.05</span>
               <div className="flex-1">
-                <span>
-                  포스트모던 어린이 [2부] 까다로운 어린이를 위해 특별한 음식을
-                  준비하지 마세요{' '}
-                </span>
-                <span className="conferrer">부산현대미술관</span>
+                <span className="mr-1">{t('e-title-2023')}</span>
+                <span className="conferrer">{t('e-place-2023')}</span>
               </div>
             </li>
             <li className="footsteps flex flex-col">
-              <span className="exhibition flex-1">2021.01</span>
+              <span className="exhibition flex-1">2020.12</span>
               <div className="flex-1">
-                <span>Cloud : Play on AI </span>
-                <span className="conferrer">아트센터나비</span>
+                <span className="mr-1">{t('e-title-2021')}</span>
+                <span className="conferrer">{t('e-place-2021')}</span>
               </div>
             </li>
             <li className="footsteps flex flex-col">
               <span className="exhibition flex-1">2020.01</span>
               <div className="flex-1">
-                <span>A.I. 632: Design Around Table </span>
-                <span className="conferrer">무등갤러리·토탈미술관</span>
+                <span className="mr-1">{t('e-title-2019-3')}</span>
+                <span className="conferrer">{t('e-place-2019-3')}</span>
               </div>
             </li>
             <li className="footsteps flex flex-col">
               <span className="exhibition flex-1">2019.12</span>
               <div className="flex-1">
-                <span>기억장치 - Virtual Memory </span>
-                <span className="conferrer">대안공간루프</span>
+                <span className="mr-1">{t('e-title-2019-2')}</span>
+                <span className="conferrer">{t('e-place-2019-2')}</span>
               </div>
             </li>
             <li className="footsteps flex flex-col">
-              <span className="exhibition flex-1">2019.06</span>
+              <span className="exhibition flex-1">2019.05</span>
               <div className="flex-1">
-                <span>A.I.632 </span>
-                <span className="conferrer">토탈미술관</span>
+                <span className="mr-1">{t('e-title-2019-1')}</span>
+                <span className="conferrer">{t('e-place-2019-1')}</span>
               </div>
             </li>
             <li className="footsteps flex flex-col">
               <span className="exhibition flex-1">2018.10</span>
               <div className="flex-1">
-                <span>A.I.MAGINE Project Exhibition </span>
-                <span className="conferrer">
-                  서울대학교 도시데이터사이언스연구소·아트센터나비·스페이스원
-                </span>
+                <span className="mr-1">{t('e-title-2018')}</span>
+                <span className="conferrer">{t('e-place-2018')}</span>
               </div>
             </li>
           </ul>
           <div className="col-span-5 my-8" />
           <div className="col-span-1">
-            <span className="footstep-type">수상</span>
+            <span className="footstep-type">{t('award')}</span>
           </div>
           <ul className="col-span-4">
             <li className="footsteps flex flex-col">
               <span className="exhibition flex-1">2020</span>
               <div className="flex-1">
-                <span>
-                  DNA Paris Design Awards Graphic/Interactive Design Winner{' '}
-                </span>
+                <span>{t('a-title-2020')}</span>
               </div>
             </li>
             <li className="footsteps flex flex-col">
               <span className="exhibition flex-1">2017.11</span>
               <div className="flex-1">
-                <span>
-                  ICT 문화예술 융합 공모전 Art부문
-                  대상(과학기술정보통신부장관상){' '}
-                </span>
+                <span>{t('a-title-2017')}</span>
               </div>
             </li>
           </ul>
           <div className="col-span-5 my-8" />
           <div className="col-span-1">
-            <span className="footstep-type">기타</span>
+            <span className="footstep-type">{t('etc')}</span>
           </div>
           <ul className="col-span-4">
             <li className="footsteps flex flex-col">
-              <span className="exhibition flex-1">2021.</span>
+              <span className="exhibition flex-1">2021.10</span>
               <div className="flex-1">
-                <span>
-                  융복합 미술관 교육 &lt;미래 미술관:실험가들&gt; 온라인 토크{' '}
-                </span>
-                <span className="conferrer">국립현대미술관</span>
+                <span className="mr-1">{t('etc-title-2021')}</span>
+                <span className="conferrer">{t('etc-place-2021')}</span>
               </div>
             </li>
             <li className="footsteps flex flex-col">
-              <span className="exhibition flex-1">2020.</span>
+              <span className="exhibition flex-1">2020.12</span>
               <div className="flex-1">
-                <span>청소년 융복합 워크숍 &lt;주사위로 음악 만들기&gt; </span>
-                <span className="conferrer">국립현대미술관</span>
+                <span className="mr-1">{t('etc-title-2020')}</span>
+                <span className="conferrer">{t('etc-place-2020')}</span>
               </div>
             </li>
             <li className="footsteps flex flex-col">
               <span className="exhibition flex-1">2019.03</span>
               <div className="flex-1">
-                <span>SXSW 2019 COREA IMPACT SHOWCASE </span>
-                <span className="conferrer">한국콘텐츠진흥원</span>
+                <span className="mr-1">{t('etc-title-2019')}</span>
+                <span className="conferrer">{t('etc-place-2019')}</span>
               </div>
             </li>
           </ul>
         </div>
-      </div>
-    </div>
-  );
-};
-
-const Introduction = () => {
-  return (
-    <div className="mx-auto flex h-[1260px] max-w-6xl items-center justify-center text-white">
-      <div className="p-12">
-        <p className="history">
-          뭐라도 재미있는 것을 만들어보자는 모토로 2017년에 결성된 미디어
-          프로젝트 팀, midiDICE
-        </p>
-        <p className="history">
-          게임, 인공지능, 웹 매체에서 생성 음악을 통해 창작자와 감상자 간의 벽을
-          허무는 작업을 주로 합니다. 사람과 기술의 상호작용을 매개하는 음악
-          인터페이스에 관심이 많습니다.
-        </p>
-        <p className="history">
-          새로운 방식의 음악 인터페이스를 전시함으로써 사람이 기술을 어떤
-          방식으로 규정하는지 살펴보고, 이를 통해 역으로 기술의 입장에서 사람의
-          역할을 살펴보기도 합니다.
-        </p>
       </div>
     </div>
   );
@@ -262,85 +241,72 @@ const RollingDice = () => {
 };
 
 const WorkArchive = () => {
+  const { t } = useTranslation(['common']);
   return (
     <div className="flex flex-col">
-      <div className="my-40 h-[800px] flex-1">
+      <div className="my-40 flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <Image
             src="http://d1q98opzn481en.cloudfront.net/mididice2023.jpg"
-            alt=""
+            alt="interplaytions2023"
             width={1024}
             height={768}
           />
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
-          <div className="text-2xl font-bold">
-            랜덤 음악과 패턴을 연결해서 만들어보는 나만의 음악
-          </div>
+          <div className="text-2xl font-bold">{t('interplaytions2023')}</div>
         </div>
       </div>
-      <div className="my-40 h-[800px] flex-1">
+      <div className="my-40 flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <Image
             src="http://d1q98opzn481en.cloudfront.net/mididice2020.jpg"
-            alt=""
-            width={4032}
-            height={2268}
+            alt="doodlering"
+            width={1024}
+            height={768}
           />
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
-          <div className="text-2xl font-bold">
-            A storybook generator made of incomplete sentences that lets you
-            complete stories by drawing your own pictures
-          </div>
+          <div className="text-2xl font-bold">{t('doodlering')}</div>
         </div>
       </div>
-      <div className="my-40 h-[800px] flex-1">
+      <div className="my-40 flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <Image
             src="http://d1q98opzn481en.cloudfront.net/mididice2019.avif"
-            alt=""
-            width={2048}
-            height={996}
+            alt="mmwd"
+            width={1152}
+            height={560}
           />
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
-          <div className="text-2xl font-bold">
-            Workshop project about how people think about AI generated artworks.
-            Sound design aided by Magenta Studio&apos;s interpolate plugin.
-          </div>
+          <div className="text-2xl font-bold">{t('mmwd')}</div>
         </div>
       </div>
-      <div className="my-40 h-[800px] flex-1">
+      <div className="my-40 flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <Image
             src="http://d1q98opzn481en.cloudfront.net/mididice2018.jpg"
-            alt=""
-            width={4032}
-            height={3024}
+            alt="interplaytions"
+            width={1152}
+            height={864}
           />
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
-          <div className="text-2xl font-bold">
-            An arcade puzzle game that composes music every turn by interacting
-            with artificial intelligence. We used magenta(open source) to
-            generate AI music in real-time.
-          </div>
+          <div className="text-2xl font-bold">{t('interplaytions')}</div>
         </div>
       </div>
-      <div className="my-40 h-[800px] flex-1">
+      <div className="my-40 flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <Image
             src="http://d1q98opzn481en.cloudfront.net/mididice2017.jpg"
-            alt=""
-            width={6000}
-            height={3700}
+            alt="mididice"
+            width={1152}
+            height={710}
           />
         </div>
         <div className="flex h-[300px] items-center justify-center bg-black">
-          <div className="text-2xl font-bold">
-            Website that makes music by connecting random music and patterns
-          </div>
+          <div className="text-2xl font-bold">{t('mididice2017')}</div>
         </div>
       </div>
     </div>
@@ -348,6 +314,7 @@ const WorkArchive = () => {
 };
 
 const People = () => {
+  const { t } = useTranslation(['common']);
   return (
     <div className="mx-auto flex h-[1120px] max-w-6xl items-center justify-center">
       <div>
@@ -358,77 +325,103 @@ const People = () => {
         </h2>
         <div className="mt-48 grid grid-cols-4">
           <div className="flex flex-col">
-            <span className="text-3xl font-bold">현지윤</span>
-            <span className="text-base font-semibold text-neutral-600">
-              Interaction Designer
-            </span>
-            <span className="pr-6 text-xl font-semibold text-neutral-300">
-              미디어아트 기반의 작업을 주로 해온 인터랙션 디자이너. 주로 게임
-              디자인, 미디어 아트, 인터랙션 디자인 및 사운드 작업을 담당해왔다.
-              생성음악을 통해 창작자 및 감상자간의 벽을 허물 수 있다고 믿으며
-              Ableton Live, Max, p5.js를 이용해 미디어아트 관련 작업을
-              진행해왔다.
-            </span>
-            <div className="grid grid-cols-3 text-xs text-zinc-400">
-              <span className="col-span-1"># UI/UX Design</span>
-              <span className="col-span-2"># Sound Design</span>
-              <span className="col-span-1"># Team Leader</span>
-              <span className="col-span-2"># Project Manager</span>
+            <div className="flex flex-1 flex-col">
+              <span className="text-3xl font-bold">{t('hyun-name')}</span>
+              <span className="text-base font-semibold text-neutral-600">
+                Interaction Designer
+              </span>
+              <span className="pr-6 text-xl font-semibold text-neutral-300">
+                {t('hyun-description')}
+              </span>
+              <div className="grid grid-cols-3 text-xs text-zinc-400">
+                <span className="col-span-1"># UI/UX Design</span>
+                <span className="col-span-2"># Sound Design</span>
+                <span className="col-span-1"># Team Leader</span>
+                <span className="col-span-2"># Project Manager</span>
+              </div>
+            </div>
+            <div className="w-11/12">
+              <a
+                href="http://jeeyoonhyun.com"
+                className="more-button block w-full rounded-lg py-2.5 text-center"
+              >
+                더 알아보기
+              </a>
             </div>
           </div>
           <div className="flex flex-col">
-            <span className="text-3xl font-bold">박주연</span>
-            <span className="text-base font-semibold text-neutral-600">
-              Interaction Designer
-            </span>
-            <span className="pr-6 text-xl font-semibold text-neutral-300">
-              홍익대학교에서 디지털 미디어 디자인을 전공한 인터랙션 디자이너. 팀
-              내에서 사용자 인터페이스의 비주얼 디렉션 전반을 담당하고 있다.
-              최근에는 음악 데이터의 그래픽 비주얼라이제이션에 대한 연구를
-              기반으로 작업을 진행하고 있다.
-            </span>
-            <div className="grid grid-cols-3 text-xs text-zinc-400">
-              <span className="col-span-1"># Graphic Design</span>
-              <span className="col-span-2"># Motion Graphic</span>
-              <span className="col-span-1"># UX/UI Design</span>
-              <span className="col-span-2"># Visual Art Director</span>
+            <div className="flex flex-1 flex-col">
+              <span className="text-3xl font-bold">{t('park-name')}</span>
+              <span className="text-base font-semibold text-neutral-600">
+                Interaction Designer
+              </span>
+              <span className="pr-6 text-xl font-semibold text-neutral-300">
+                {t('park-description')}
+              </span>
+              <div className="grid grid-cols-3 text-xs text-zinc-400">
+                <span className="col-span-1"># Graphic Design</span>
+                <span className="col-span-2"># Motion Graphic</span>
+                <span className="col-span-1"># UX/UI Design</span>
+                <span className="col-span-2"># Visual Art Director</span>
+              </div>
+            </div>
+            <div className="w-11/12">
+              <a
+                href="http://linkedin.com/in/designerjyp"
+                className="more-button block w-full rounded-lg py-2.5 text-center"
+              >
+                더 알아보기
+              </a>
             </div>
           </div>
           <div className="flex flex-col">
-            <span className="text-3xl font-bold">민현기</span>
-            <span className="text-base font-semibold text-neutral-600">
-              Software Engineer
-            </span>
-            <span className="pr-6 text-xl font-semibold text-neutral-300">
-              데이터로 더 나은 세상을 만들고 싶은 엔지니어. 최근에는 AI 모델
-              활용 및 응용에 관심을 두고 활동하고 있다. 프로젝트 설계, 시각화
-              작업 및 딥러닝을 사용한 음악 생성 작업을 진행했다. 최근에는 AI
-              인터랙션에 관심을 두고 연구를 진행하고 있다.
-            </span>
-            <div className="grid grid-cols-3 text-xs text-zinc-400">
-              <span className="col-span-1"># Researcher</span>
-              <span className="col-span-2"># BE/FE Engineer</span>
-              <span className="col-span-1"># AI/ML</span>
-              <span className="col-span-2"># Project Leader</span>
+            <div className="flex flex-1 flex-col">
+              <span className="text-3xl font-bold">{t('min-name')}</span>
+              <span className="text-base font-semibold text-neutral-600">
+                Software Engineer
+              </span>
+              <span className="pr-6 text-xl font-semibold text-neutral-300">
+                {t('min-description')}
+              </span>
+              <div className="grid grid-cols-3 text-xs text-zinc-400">
+                <span className="col-span-1"># Researcher</span>
+                <span className="col-span-2"># BE/FE Engineer</span>
+                <span className="col-span-1"># AI/ML</span>
+                <span className="col-span-2"># Project Leader</span>
+              </div>
+            </div>
+            <div className="w-11/12">
+              <a
+                href="https://github.com/ho9science"
+                className="more-button block w-full rounded-lg py-2.5 text-center"
+              >
+                더 알아보기
+              </a>
             </div>
           </div>
-          <div className="flex flex-col">
-            <span className="text-3xl font-bold">김창민</span>
-            <span className="text-base font-semibold text-neutral-600">
-              Software Engineer
-            </span>
-            <span className="pr-6 text-xl font-semibold text-neutral-300">
-              작곡가를 꿈꾸는 프로그래머. 학부시절 작곡과 컴퓨터공학을
-              전공하였으며, 음악과 IT의 융합에 관심이 많다. 클라우드 서비스를
-              활용하여 IT 인프라를 구축하고, 음악 데이터의 분석, 변조를
-              맡아왔다. 미니멀리즘 음악에 관심이 많으며 최근에는 미디 파일
-              구조분석을 연구하고 있다.
-            </span>
-            <div className="grid grid-cols-3 text-xs text-zinc-400">
-              <span className="col-span-1"># Researcher</span>
-              <span className="col-span-2"># BE/FE Engineer</span>
-              <span className="col-span-1"># AI/ML</span>
-              <span className="col-span-2"># Creative Developer</span>
+          <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-1 flex-col">
+              <span className="text-3xl font-bold">{t('kim-name')}</span>
+              <span className="text-base font-semibold text-neutral-600">
+                Software Engineer
+              </span>
+              <span className="pr-6 text-xl font-semibold text-neutral-300">
+                {t('kim-description')}
+              </span>
+              <div className="grid grid-cols-3 text-xs text-zinc-400">
+                <span className="col-span-1"># Researcher</span>
+                <span className="col-span-2"># BE/FE Engineer</span>
+                <span className="col-span-1"># AI/ML</span>
+                <span className="col-span-2"># Creative Developer</span>
+              </div>
+            </div>
+            <div className="w-11/12">
+              <a
+                href="https://github.com/nine-hundred"
+                className="more-button block w-full rounded-lg py-2.5 text-center"
+              >
+                더 알아보기
+              </a>
             </div>
           </div>
         </div>
@@ -450,7 +443,10 @@ const Index = () => {
   return (
     <Main
       meta={
-        <Meta title="midiDICE" description="midiDICE is media art work team" />
+        <Meta
+          title="midiDICE"
+          description="The midiDICE is a team working on media art projects. 미디다이스는 미디어 아트를 하는 팀입니다."
+        />
       }
     >
       <FirstScene />

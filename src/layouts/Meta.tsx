@@ -43,7 +43,7 @@ const Meta = (props: IMetaProps) => {
         />
         <link
           rel="icon"
-          href={`${router.basePath}/favicon.ico`}
+          href="http://d1q98opzn481en.cloudfront.net/favicon.ico"
           key="favicon"
         />
       </Head>
@@ -57,6 +57,15 @@ const Meta = (props: IMetaProps) => {
           url: props.canonical,
           locale: AppConfig.locale,
           site_name: AppConfig.site_name,
+          images: [
+            {
+              url: 'http://d1q98opzn481en.cloudfront.net/midipurple.png',
+              width: 180,
+              height: 180,
+              alt: '미디다이스',
+              type: 'image/png',
+            },
+          ],
         }}
       />
     </>

@@ -105,6 +105,14 @@ body {
   line-height: 100.8px;
 }
 
+.more-button {
+  background-color: #202020;
+  color: #CDCDCD;
+}
+.more-button:hover {
+  border: none;
+}
+
 .scene {
   width: 200px;
   height: 200px;
