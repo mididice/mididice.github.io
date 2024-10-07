@@ -444,7 +444,7 @@ const Index = () => {
     <Main
       meta={
         <Meta
-          title="midiDICE"
+          title="midiDICE 미디다이스"
           description="The midiDICE is a team working on media art projects. 미디다이스는 미디어 아트를 하는 팀입니다."
         />
       }
