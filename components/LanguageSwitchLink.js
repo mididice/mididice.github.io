@@ -16,7 +16,7 @@ const LanguageSwitchLink = ({ locale, ...rest }) => {
     pName = pName.replace(`[${k}]`, router.query[k]);
   });
   if (locale) {
-    href = rest.href ? `/${locale}${rest.href}` : pName;
+    href = rest.href ? `/${locale}${rest.href}` : `/${locale}`;
   }
 
   return (
@@ -24,7 +24,11 @@ const LanguageSwitchLink = ({ locale, ...rest }) => {
       <button
         style={{
           fontSize: 'small',
-          color: currentLocale === locale ? '#fff' : '#606060',
+          color:
+            currentLocale === locale ||
+            (currentLocale === undefined && locale === 'ko')
+              ? '#fff'
+              : '#606060',
         }}
         onClick={() => languageDetector.cache(locale)}
       >

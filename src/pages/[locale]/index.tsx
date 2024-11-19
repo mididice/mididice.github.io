@@ -462,4 +462,14 @@ const Index = () => {
 
 export default Index;
 const getStaticProps = makeStaticProps(['common']);
-export { getStaticPaths, getStaticProps };
+export {
+  FirstScene,
+  getStaticPaths,
+  getStaticProps,
+  History,
+  Introduction,
+  LastScene,
+  People,
+  RollingDice,
+  WorkArchive,
+};
