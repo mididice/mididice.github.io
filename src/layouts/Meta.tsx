@@ -1,5 +1,5 @@
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import Head from 'next/head';
-import Script from 'next/script';
 import { NextSeo } from 'next-seo';
 
 import { AppConfig } from '@/utils/AppConfig';
@@ -26,21 +26,8 @@ const Meta = (props: IMetaProps) => {
           key="favicon"
         />
       </Head>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-V7TWYW0PH9"
-      />
-      <Script
-        id="apply-ga"
-        dangerouslySetInnerHTML={{
-          __html: `window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-V7TWYW0PH9', {
-          page_path: window.location.pathname + window.location.search,
-          });`,
-        }}
-      />
+      <GoogleTagManager gtmId="G-V7TWYW0PH9" />
+      <GoogleAnalytics gaId="G-V7TWYW0PH9" />
       <NextSeo
         title={props.title}
         description={props.description}
