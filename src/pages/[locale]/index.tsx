@@ -52,8 +52,10 @@ import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic';
 const FirstScene = () => {
   const { t } = useTranslation(['common']);
   return (
-    <div className="mx-auto flex h-[1000px] max-w-6xl items-center justify-center text-center text-white opacity-100">
-      <h2 className="head-title">{t('start')}</h2>
+    <div className="mx-auto flex max-w-6xl flex-col items-center justify-center py-72 text-center text-white opacity-100 md:py-96">
+      <h2 className="head-title w-11/12 text-5xl md:w-6/12 md:text-7xl">
+        {t('start')}
+      </h2>
     </div>
   );
 };
@@ -63,9 +65,9 @@ const Introduction = () => {
   return (
     <div className="mx-auto flex min-h-[1260px] max-w-6xl items-center justify-center text-white">
       <div className="p-12">
-        <p className="history">{t('introduce1')}</p>
-        <p className="history">{t('introduce2')}</p>
-        <p className="history">{t('introduce3')}</p>
+        <p className="history text-5xl md:text-6xl">{t('introduce1')}</p>
+        <p className="history text-5xl md:text-6xl">{t('introduce2')}</p>
+        <p className="history text-5xl md:text-6xl">{t('introduce3')}</p>
       </div>
     </div>
   );
@@ -74,7 +76,7 @@ const Introduction = () => {
 const History = () => {
   const { t } = useTranslation(['common']);
   return (
-    <div className="mx-auto flex h-[1970px] max-w-6xl items-center justify-center">
+    <div className="mx-auto flex max-w-6xl flex-col items-center justify-center md:my-80">
       <div>
         <h2 className="footstep-title">
           Tracing
@@ -189,7 +191,7 @@ const History = () => {
 
 const RollingDice = () => {
   return (
-    <div className="rolling-dice flex h-[800px] items-center justify-center">
+    <div className="rolling-dice flex flex-col items-center justify-center py-80">
       <div className="scene mx-auto">
         <div className="cube">
           <Image
@@ -243,7 +245,7 @@ const RollingDice = () => {
 const WorkArchive = () => {
   const { t } = useTranslation(['common']);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col p-1">
       <div className="my-40 flex-1">
         <div className="mx-auto max-w-6xl text-center text-white opacity-100">
           <Image
@@ -316,34 +318,38 @@ const WorkArchive = () => {
 const People = () => {
   const { t } = useTranslation(['common']);
   return (
-    <div className="mx-auto flex h-[1120px] max-w-6xl items-center justify-center">
+    <div className="mx-auto flex max-w-6xl flex-col items-center justify-center md:flex-row">
       <div>
         <h2 className="footstep-title">
           The People
           <br />
           Sharing This Journey
         </h2>
-        <div className="mt-48 grid grid-cols-4">
+        <div className="mt-48 grid grid-cols-1 items-stretch gap-10 md:grid-cols-4">
           <div className="flex flex-col">
             <div className="flex flex-1 flex-col">
               <span className="text-3xl font-bold">{t('hyun-name')}</span>
               <span className="text-base font-semibold text-neutral-600">
                 Interaction Designer
               </span>
-              <span className="pr-6 text-xl font-semibold text-neutral-300">
+              <span className="text-xl font-semibold text-neutral-300">
                 {t('hyun-description')}
               </span>
-              <div className="grid grid-cols-3 text-xs text-zinc-400">
-                <span className="col-span-1"># UI/UX Design</span>
-                <span className="col-span-2"># Sound Design</span>
-                <span className="col-span-1"># Team Leader</span>
-                <span className="col-span-2"># Project Manager</span>
+              <div className="flex flex-col text-xs text-zinc-400">
+                <div className="flex">
+                  <span className="mr-2 w-auto"># UI/UX Design</span>
+                  <span className="flex-1"># Sound Design</span>
+                </div>
+                <div className="flex">
+                  <span className="mr-2 w-auto"># Team Leader</span>
+                  <span className="flex-1"># Project Manager</span>
+                </div>
               </div>
             </div>
-            <div className="w-11/12">
+            <div className="mx-auto flex w-full items-center justify-center p-4 shadow md:w-11/12">
               <a
                 href="http://jeeyoonhyun.com"
-                className="more-button block w-full rounded-lg py-2.5 text-center"
+                className="more-button w-full rounded-lg px-4 py-2 text-center transition hover:bg-neutral-800"
               >
                 더 알아보기
               </a>
@@ -355,20 +361,24 @@ const People = () => {
               <span className="text-base font-semibold text-neutral-600">
                 Interaction Designer
               </span>
-              <span className="pr-6 text-xl font-semibold text-neutral-300">
+              <span className="text-xl font-semibold text-neutral-300">
                 {t('park-description')}
               </span>
-              <div className="grid grid-cols-3 text-xs text-zinc-400">
-                <span className="col-span-1"># Graphic Design</span>
-                <span className="col-span-2"># Motion Graphic</span>
-                <span className="col-span-1"># UX/UI Design</span>
-                <span className="col-span-2"># Visual Art Director</span>
+              <div className="flex flex-col text-xs text-zinc-400">
+                <div className="flex">
+                  <span className="mr-2 w-auto"># Graphic Design</span>
+                  <span className="flex-1"># Motion Graphic</span>
+                </div>
+                <div className="flex">
+                  <span className="mr-2 w-auto"># UX/UI Design</span>
+                  <span className="flex-1"># Visual Art Director</span>
+                </div>
               </div>
             </div>
-            <div className="w-11/12">
+            <div className="mx-auto flex w-full items-center justify-center p-4 shadow md:w-11/12">
               <a
                 href="http://linkedin.com/in/designerjyp"
-                className="more-button block w-full rounded-lg py-2.5 text-center"
+                className="more-button w-full rounded-lg px-4 py-2 text-center transition hover:bg-neutral-800"
               >
                 더 알아보기
               </a>
@@ -380,20 +390,24 @@ const People = () => {
               <span className="text-base font-semibold text-neutral-600">
                 Software Engineer
               </span>
-              <span className="pr-6 text-xl font-semibold text-neutral-300">
+              <span className="text-xl font-semibold text-neutral-300">
                 {t('min-description')}
               </span>
-              <div className="grid grid-cols-3 text-xs text-zinc-400">
-                <span className="col-span-1"># Researcher</span>
-                <span className="col-span-2"># BE/FE Engineer</span>
-                <span className="col-span-1"># AI/ML</span>
-                <span className="col-span-2"># Project Leader</span>
+              <div className="flex flex-col text-xs text-zinc-400">
+                <div className="flex">
+                  <span className="mr-2 w-auto"># Researcher</span>
+                  <span className="flex-1"># BE/FE Engineer</span>
+                </div>
+                <div className="flex">
+                  <span className="mr-2 w-auto"># AI/ML</span>
+                  <span className="flex-1"># Project Leader</span>
+                </div>
               </div>
             </div>
-            <div className="w-11/12">
+            <div className="mx-auto flex w-full items-center justify-center p-4 shadow md:w-11/12">
               <a
                 href="https://github.com/ho9science"
-                className="more-button block w-full rounded-lg py-2.5 text-center"
+                className="more-button w-full rounded-lg px-4 py-2 text-center transition hover:bg-neutral-800"
               >
                 더 알아보기
               </a>
@@ -405,20 +419,24 @@ const People = () => {
               <span className="text-base font-semibold text-neutral-600">
                 Software Engineer
               </span>
-              <span className="pr-6 text-xl font-semibold text-neutral-300">
+              <span className="text-xl font-semibold text-neutral-300">
                 {t('kim-description')}
               </span>
-              <div className="grid grid-cols-3 text-xs text-zinc-400">
-                <span className="col-span-1"># Researcher</span>
-                <span className="col-span-2"># BE/FE Engineer</span>
-                <span className="col-span-1"># AI/ML</span>
-                <span className="col-span-2"># Creative Developer</span>
+              <div className="flex flex-col text-xs text-zinc-400">
+                <div className="flex">
+                  <span className="mr-2 w-auto"># Researcher</span>
+                  <span className="flex-1"># BE/FE Engineer</span>
+                </div>
+                <div className="flex">
+                  <span className="mr-2 w-auto"># AI/ML</span>
+                  <span className="flex-1"># Creative Developer</span>
+                </div>
               </div>
             </div>
-            <div className="w-11/12">
+            <div className="mx-auto flex w-full items-center justify-center p-4 shadow md:w-11/12">
               <a
                 href="https://github.com/nine-hundred"
-                className="more-button block w-full rounded-lg py-2.5 text-center"
+                className="more-button w-full rounded-lg px-4 py-2 text-center transition hover:bg-neutral-800"
               >
                 더 알아보기
               </a>
