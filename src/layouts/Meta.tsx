@@ -20,6 +20,10 @@ const Meta = (props: IMetaProps) => {
           content="width=device-width,initial-scale=1"
           key="viewport"
         />
+        <meta
+          name="google-site-verification"
+          content="IgbL-fKIDsjUyx4WaDgBxJdXd25IqvIXMJxnT1IfeJ0"
+        />
         <link
           rel="icon"
           href="https://d1q98opzn481en.cloudfront.net/favicon.ico"
