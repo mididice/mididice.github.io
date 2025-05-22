@@ -326,7 +326,7 @@ const People = () => {
           Sharing This Journey
         </h2>
         <div className="mt-48 grid grid-cols-1 items-stretch gap-10 md:grid-cols-4">
-          <div className="flex flex-col">
+          <div className="flex flex-col p-1">
             <div className="flex flex-1 flex-col">
               <span className="text-3xl font-bold">{t('hyun-name')}</span>
               <span className="text-base font-semibold text-neutral-600">
@@ -335,7 +335,7 @@ const People = () => {
               <span className="text-xl font-semibold text-neutral-300">
                 {t('hyun-description')}
               </span>
-              <div className="flex flex-col text-xs text-zinc-400">
+              <div className="flex flex-col pt-1 text-xs text-zinc-400">
                 <div className="flex">
                   <span className="mr-2 w-auto"># UI/UX Design</span>
                   <span className="flex-1"># Sound Design</span>
@@ -355,7 +355,7 @@ const People = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col p-1">
             <div className="flex flex-1 flex-col">
               <span className="text-3xl font-bold">{t('park-name')}</span>
               <span className="text-base font-semibold text-neutral-600">
@@ -364,7 +364,7 @@ const People = () => {
               <span className="text-xl font-semibold text-neutral-300">
                 {t('park-description')}
               </span>
-              <div className="flex flex-col text-xs text-zinc-400">
+              <div className="flex flex-col pt-1 text-xs text-zinc-400">
                 <div className="flex">
                   <span className="mr-2 w-auto"># Graphic Design</span>
                   <span className="flex-1"># Motion Graphic</span>
@@ -384,7 +384,7 @@ const People = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col p-1">
             <div className="flex flex-1 flex-col">
               <span className="text-3xl font-bold">{t('min-name')}</span>
               <span className="text-base font-semibold text-neutral-600">
@@ -393,7 +393,7 @@ const People = () => {
               <span className="text-xl font-semibold text-neutral-300">
                 {t('min-description')}
               </span>
-              <div className="flex flex-col text-xs text-zinc-400">
+              <div className="flex flex-col pt-1 text-xs text-zinc-400">
                 <div className="flex">
                   <span className="mr-2 w-auto"># Researcher</span>
                   <span className="flex-1"># BE/FE Engineer</span>
@@ -406,14 +406,14 @@ const People = () => {
             </div>
             <div className="mx-auto flex w-full items-center justify-center p-4 shadow md:w-11/12">
               <a
-                href="https://github.com/ho9science"
+                href="https://hyeonki-min.com"
                 className="more-button w-full rounded-lg px-4 py-2 text-center transition hover:bg-neutral-800"
               >
                 더 알아보기
               </a>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col p-1">
             <div className="flex flex-1 flex-col">
               <span className="text-3xl font-bold">{t('kim-name')}</span>
               <span className="text-base font-semibold text-neutral-600">
@@ -422,7 +422,7 @@ const People = () => {
               <span className="text-xl font-semibold text-neutral-300">
                 {t('kim-description')}
               </span>
-              <div className="flex flex-col text-xs text-zinc-400">
+              <div className="flex flex-col pt-1 text-xs text-zinc-400">
                 <div className="flex">
                   <span className="mr-2 w-auto"># Researcher</span>
                   <span className="flex-1"># BE/FE Engineer</span>
